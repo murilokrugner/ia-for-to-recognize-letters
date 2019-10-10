@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+	<title>OCR</title>
+</head>
+<body>
+
+<img id="userImage" src="words.JPG"/> 
+
+<script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
+
+</body>
+<script>  
+    var myImage= document.getElementById('userImage');
+
+    Tesseract.recognize(myImage).then(function(result){
+
+    console.log(result.text);
+
+    alert(result.text);
+
+    });
+</script>
+</html>
