@@ -1,13 +1,15 @@
-import { Router } from 'express';
+import { Router } from "express";
 
-import ImagesController from './app/controllers/ImagesController';
+import UsersController from "./app/controllers/UsersController";
 
 const routes = new Router();
 
-routes.get('/', (req, res) => {
-    return res.json('deu certo');
+routes.get("/", (req, res) => {
+  return res.json("deu certo");
 });
 
-routes.get('/images', ImagesController.index);
+routes.get("/users", UsersController.index);
+
+routes.post("/users", UsersController.store);
 
 export default routes;
