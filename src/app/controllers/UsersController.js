@@ -2,9 +2,9 @@ import Users from "../models/Users";
 
 class UsersController {
   async index(req, res) {
-    const { name } = req.body;
+    const { name } = req.params;
 
-    const user = await Users.findOne({ name });
+    const user = await Users.find({ name });
 
     if (!user) {
       return res.status(400).json("Esse aluno não existe");
