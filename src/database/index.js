@@ -21,7 +21,7 @@ class Database {
 
   mongo() {
     this.mongoConnection = mongoose.connect(
-      "mongodb://159.203.72.78:27017/iamongo",
+      "mongodb://45.55.57.165:27017/iamongo",
       {
         useNewUrlParser: true,
         useFindAndModify: true,
