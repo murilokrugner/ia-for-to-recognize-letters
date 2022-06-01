@@ -19,7 +19,7 @@
     "pg-hstore": "^2.3.3",
     "sequelize": "^5.19.4",
     "sequelize-cli": "^5.5.1",
-    "sharp": "^0.23.1",
+    "sharp": "^0.30.5",
     "tesseract.js": "^2.0.0-beta.1"
   },
   "devDependencies": {
